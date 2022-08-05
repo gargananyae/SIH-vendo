@@ -1,13 +1,14 @@
 /* Individual item */
 .bm-item {
+  padding-top: 29%;
     /* display: inline-block; */
     height: 64px;
     /* width: 128px; */
     color: #fff;
     margin-bottom: 10px;
     text-align: left;
-    text-decoration: none;
-    font-size:1.6rem;
+    text-decoration: underline;
+    font-size:2rem;
     transition: color 0.2s;
   }
   
@@ -35,13 +36,13 @@
   
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    height: 100px;
+    width: 100px;
   }
   
   /* Color/shape of close button cross */
   .bm-cross {
-    background: #bdc3c7;
+    background: #1d3f56;
   }
   
   /*
@@ -51,6 +52,8 @@
   .bm-menu-wrap {
     position: fixed;
     height: 100%;
+   
+    
 }
 
 /* General sidebar styles */
@@ -59,25 +62,42 @@
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
     width: 400px;
+    box-shadow: 3px 0px 6px 0px rgba(101, 101, 101, 0.75);
+    background-color:#395B64;
+    border-radius: 10%;
   }
   
   /* Morph shape necessary with bubble or elastic */
   .bm-morph-shape {
-    fill: #373a47;
+    fill: #6675ba;
   }
   
   /* Wrapper for item list */
   .bm-item-list {
     color: #b8b7ad;
     padding: 0.8em;
+    z-index: 1;
+  
   }
   
   /* Individual item */
   .bm-item {
     display: inline-block;
+    color: #000000;
+  
+
+
+
   }
   
   /* Styling of overlay */
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+  }
+
+  .bm-cross-button{
+    width: 50%;
+    height: 50%;
+    margin-top: 25px;
+    margin-right: -80px;
   }
