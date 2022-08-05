@@ -8,7 +8,8 @@ export default function dashboard() {
     <div>
         <DashboardSidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
         <div className="dashboard-main-container">
-            
+            Hello main page
+
         </div>
         <Header pageWrapId={'pagewrap1'} outerContainerId={'container1'}/>
         
