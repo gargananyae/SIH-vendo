@@ -1,5 +1,7 @@
 import React from 'react'
 import DashboardSidebar from './components/DashboardSidebar'
+import Header from './components/Header'
+
 
 export default function dashboard() {
   return (
@@ -8,6 +10,8 @@ export default function dashboard() {
         <div className="dashboard-main-container">
             
         </div>
+        <Header pageWrapId={'pagewrap1'} outerContainerId={'container1'}/>
+        
     </div>
   )
 }
