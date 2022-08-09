@@ -1,103 +1,91 @@
 /* Individual item */
-.bm-item {
-  padding-top: 29%;
-    /* display: inline-block; */
-    height: 64px;
-    /* width: 128px; */
-    color: #fff;
-    margin-bottom: 10px;
-    text-align: left;
-    text-decoration: underline;
-    font-size:2rem;
-    transition: color 0.2s;
-  }
-  
-  .bm-item:hover {
-    color: var(--secondary-color-2);
-  }
 
-  .bm-burger-button {
-    position: fixed;
-    width: 24px;
-    height: 20px;
-    left: 36px;
-    top: 36px;
-  }
-  
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: #373a47;
-  }
-  
-  /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
-    background: #a90000;
-  }
-  
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 100px;
-    width: 100px;
-  }
-  
-  /* Color/shape of close button cross */
-  .bm-cross {
-    background: #1d3f56;
-  }
-  
-  /*
-  Sidebar wrapper styles
-  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-  */
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-   
-    
+.navcontainer{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color:rgb(235, 228, 228);
+  box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5%;
+  z-index: 100;
+
 }
 
-/* General sidebar styles */
-.bm-menu {
-    background: var(--secondary-color);
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-    width: 400px;
-    box-shadow: 3px 0px 6px 0px rgba(101, 101, 101, 0.75);
-    background-color:#ffdcbe;
-    border-radius: 10%;
-  }
-  
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #6675ba;
-  }
-  
-  /* Wrapper for item list */
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-    z-index: 1;
-  
-  }
-  
-  /* Individual item */
-  .bm-item {
-    display: inline-block;
-    color: #000000;
-  
+.wrapper{
+padding: 20px;
+z-index: 1;
+padding-top: 0px;
+
+}
 
 
 
+
+
+.logo{
+  padding:30px ;
+  padding-left: 90px;
+  margin-right: -10px;
+  background: url('../Images/iglogo.png');
+  background-size: 80%;
+  width: 100px;
+  height: 200px;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 10%;
+  background-position: 100%;
+  margin-left: 50px;
+}
+
+.wrapper>ul{
+  margin-top: 30px;
+  text-align: left;
+  padding-left: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  font-size: 60px;
+  font-weight: bolder;
+  opacity: .7;
+  font-size:x-large;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.wrapper>ul>li{
+  white-space: nowrap;
+}
+
+
+
+.wrapper>ul>li>a:hover{
+  color: rgb(119, 24, 24);
+  font-size: 22px;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width:768px ){
+  .navcontainer{
+    width:70px;
+
   }
-  
-  /* Styling of overlay */
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
+  .logo>h2{
+    opacity:0;
   }
 
-  .bm-cross-button{
-    width: 50%;
-    height: 50%;
-    margin-top: 25px;
-    margin-right: -80px;
-  }
+
+
+.wrapper>ul{
+  gap: 5px;
+}
+.wrapper>ul>li:hover{
+  color: red;
+
+}
+
+.wrapper>ul>li>a{
+  opacity: 0;
+}
+}

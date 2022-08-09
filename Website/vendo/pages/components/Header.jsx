@@ -1,60 +1,28 @@
 import React from 'react';
 import styles from "../../styles/Home.module.css";
 import Imag1 from "../../Images/Photo_transparent.png";
+import Imag2 from "../../Images/profileimage.png";
 import Image from 'next/image';
 
 
 
 function Header() {
   return (
-    <nav className='main-nav'>
-        <div className='logo'>
-            <h2>
-            <span>D</span>iy
-            <span>C</span>am
-            </h2>
+    <div className='HeaderContainer'>
+        <div className='HeaderWrapper'>
+            <div className='Title'>
+               <h2>
+                    Hello,<span> Piush!</span> 
+               </h2> 
+               <p>Welcome to your board.</p>
+            </div>    
         </div>
-        <div className='menu-link'>
-           <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-            </ul> 
+        <div className='Profile'>
+            <Image src={Imag2} alt="ProfileImage" className='image' ></Image>
         </div>
-        <div>
-            <div className='social-media'>
-                <ul className='socialmedia-desktop'>
-                    <li>
-                        <a 
-                        href='https://www.facebook.com/diycamindia/'>
-                           
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                        href='https://www.linkedin.com/company/diycam/mycompany/'>
-                            
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                        href='https://www.youtube.com/c/Diycamindia'>
-                            
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        
+    </div>
+    
 
     
     

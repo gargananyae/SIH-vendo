@@ -1,16 +1,55 @@
 import React from 'react';
-import { slide as Menu } from 'react-burger-menu';
 import styles from "../../styles/Home.module.css";
-export default props => {
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {FaHouseUser, FaRegIdCard, FcCustomerSupport, AiOutlineShoppingCart, GiShop, BsCalendar2WeekFill, RiGovernmentFill} from  "@fortawesome/free-solid-svg-icons";
+
+
+
+function Side(){
   return (
-    <Menu>
-      <a className="menu-item" href="/dashboard">Home</a>
-      <a className="menu-item" href="/vendor_registration">Vendor Registration</a>
-      <a className="menu-item" href="/customer_complaints">Customer Complaints</a>
-      <a className="menu-item" href="/vendor_complaints">Vendor Complaints</a>
-      <a className='menu-item' href="/vendin_zone">Vending Zone</a>
-      <a className='menu-item' href="/Weekly_bazaars">Weekly Bazaar</a>
-      <a className='menu-item' href="/Government_schemes">Our schemes</a>
-    </Menu>
+    <div className='navcontainer'> 
+    <div className='logocontainer'>
+    <div className='logo'>
+      
+    </div>
+    </div>
+    <div className='wrapper'>
+      <ul>
+        <li>
+        <FontAwesomeIcon icon={FaHouseUser} style={{width:"18px", cursor:"pointer"}}/>
+          <a href="/dashboard">Home</a>
+        </li>
+        <li>
+        <FontAwesomeIcon icon={FaRegIdCard} style={{width:"18px", cursor:"pointer"}}/>
+          <a href="/vendor_registration">Vendor Registration</a>
+        </li>
+        <li>
+        <FontAwesomeIcon icon={FcCustomerSupport} style={{width:"18px", cursor:"pointer"}}/>
+          <a href="/customer_complaints">Customer Complaints</a>
+        </li>
+        <li>
+        <FontAwesomeIcon icon={AiOutlineShoppingCart} style={{width:"18px", cursor:"pointer"}}/>
+          <a href="/vendor_complaints">Vendor Complaints</a>
+        </li>
+        <li>
+        <FontAwesomeIcon icon={GiShop} style={{width:"18px", cursor:"pointer"}}/>
+          <a href="/vendin_zone">Vending Zones</a>
+        </li>
+        <li>
+        <FontAwesomeIcon icon= {BsCalendar2WeekFill} style={{width:"18px", cursor:"pointer"}}/>
+          <a href="/Weekly_bazaars">Weekly Bazaar</a>
+        </li>
+        <li>
+        <FontAwesomeIcon icon={RiGovernmentFill} style={{width:"18px", cursor:"pointer"}}/>
+          <a href="/Governemnt_schemes">Our Schemes</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    
+   
   );
+
 };
+
+export default Side;
