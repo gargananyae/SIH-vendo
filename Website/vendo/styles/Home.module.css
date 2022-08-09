@@ -114,3 +114,10 @@
     flex-direction: column;
   }
 }
+
+
+
+.DashboardContainer{
+  overflow: hidden;
+  overflow-y: scroll;
+}
