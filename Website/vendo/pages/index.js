@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
         <Navbar/>
+        <div className={styles.headline}>Impacting the lives of 10 million vendors</div>
     </div>
   )
 }

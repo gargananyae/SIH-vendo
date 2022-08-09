@@ -1,5 +1,9 @@
 .container {
   /* padding: 0 2rem; */
+  background-color: var(--primary-color);
+  height: 100%;
+  color: white;
+  text-align: center;
 }
 
 .main {
@@ -113,4 +117,10 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+
+.headline{
+  font-weight: bold;
+  font-size: 2.5rem;
 }

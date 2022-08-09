@@ -37,7 +37,7 @@ ul{
 
 /* Scrollbar Styling */
 div::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 6px;               /* width of the entire scrollbar */
 }
 
 div::-webkit-scrollbar-track {
@@ -91,4 +91,6 @@ div::-webkit-scrollbar-thumb {
   box-shadow: 0 0 0 0.25rem var(--box-color) !important;
   border-color: var(--primary-color)!important;
 }
-/* React Bootstrap Accordion */
+
+/* Landing page */
+
