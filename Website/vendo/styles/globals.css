@@ -70,6 +70,8 @@ div::-webkit-scrollbar-thumb {
 }
 .dashboard-main-container{
   width: 100%;
+  margin-left: 250px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -99,4 +101,31 @@ div::-webkit-scrollbar-thumb {
 }
 
 /* Landing page */
-
+.download-btn{
+  display: flex;
+  width: 126px;
+  padding:6px;
+  border-radius: 4px;
+  margin: 4px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  cursor: grab;
+}
+.download-btn div{
+  margin-left: 12px;
+  font-size: 1.2rem;
+}
+.google-play{
+  color: #f8f9fa;
+  /* background-color: white; */
+  border: 2px solid #f8f9fa;
+}
+.google-play:hover{
+  background-color: #f8f9fa;
+  color: black;
+}
+.app-store{
+  color: #f8f9fa;
+  background-color: black;
+}

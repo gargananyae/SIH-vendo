@@ -1,6 +1,6 @@
 .container {
   /* padding: 0 2rem; */
-  background-color: var(--primary-color);
+  background-image: var(--gradient-bg);
   height: 100%;
   color: white;
   text-align: center;
@@ -128,4 +128,7 @@
 .DashboardContainer{
   overflow: hidden;
   overflow-y: scroll;
+}
+.landing-pg-navbar{
+  background-color: var(--primary-color);
 }

@@ -184,7 +184,7 @@ export default function dashboard() {
             <div className="dashboard-content">
                 <DashboardSidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
                 <div className="dashboard-main-container">
-                    <Navbar2 />
+                    {/* <Navbar2 /> */}
                     <Navbar />
                     <SearchBar/>
                     <MainContainer/>

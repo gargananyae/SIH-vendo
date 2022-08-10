@@ -8,14 +8,10 @@ export default function dashboard() {
   return (
     <div className='DashboardContainer'>
         <DashboardSidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
-        <div className="dashboard-main-container">
-        
+        <div className="dashboard-main-container" style={{marginLeft: 0}}>
+          <Header pageWrapId={'pagewrap1'} outerContainerId={'container1'}/>
+          <Content pageWrapId={'page-wrap2'} outerContainerId={'container2'}/>
         </div>
-        <Header pageWrapId={'pagewrap1'} outerContainerId={'container1'}/>
-
-<Content pageWrapId={'page-wrap2'} outerContainerId={'container2'}/>
-
-        
     </div>
   )
 }
