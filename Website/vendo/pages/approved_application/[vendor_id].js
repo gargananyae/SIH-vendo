@@ -9,7 +9,7 @@ function VendorApplicationDetails({VendorId}){
 
     const MainContainer = () =>{
 
-        const customer_review = [
+        const custom_officer_review = [
             {
                 'rating':'2.5',
                 'custom_officer_date':'16/04/2023',
@@ -30,8 +30,8 @@ function VendorApplicationDetails({VendorId}){
             },
            
         ]
-        const CustomerReview = () =>{
-            const reviews  =  customer_review.map((reviews) =>{
+        const CustomOfficerReview = () =>{
+            const reviews  =  custom_officer_review.map((reviews) =>{
                 return (
                     <li>
                         <Card>
@@ -104,7 +104,7 @@ function VendorApplicationDetails({VendorId}){
                     <div className="pending-application-section-title">Ratings</div>
                     <Rating name="read-only" value={3} readOnly />
                     <ul>
-                        <CustomerReview />
+                        <CustomOfficerReview />
                     </ul>
                 </div>
             )

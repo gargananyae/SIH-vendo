@@ -3,12 +3,16 @@
 .navcontainer{
   position: fixed;
   width: 250px;
-  height: 100%;
-  background-color:rgb(235, 228, 228);
-  box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 5%;
+  height: 100vh;
+  overflow: auto;
+  background-color: var(--primary-color);
+  box-shadow: 3px 0px 6px 0px var(--shade-color);
   z-index: 100;
 
+}
+
+.navcontainer::-webkit-scrollbar{
+  display: none;
 }
 
 .wrapper{
@@ -17,10 +21,6 @@ z-index: 1;
 padding-top: 0px;
 
 }
-
-
-
-
 
 .logo{
   padding:30px ;
@@ -44,7 +44,7 @@ padding-top: 0px;
   padding-left: 3px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 30px;
   font-size: 60px;
   font-weight: bolder;
   opacity: .7;
@@ -56,12 +56,13 @@ padding-top: 0px;
 
 .wrapper>ul>li{
   white-space: nowrap;
+  color: white;
 }
 
 
 
 .wrapper>ul>li>a:hover{
-  color: rgb(119, 24, 24);
+  color: var(--secondary-color);
   font-size: 22px;
   transition: 0.2s;
 }

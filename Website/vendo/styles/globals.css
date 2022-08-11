@@ -71,7 +71,9 @@ div::-webkit-scrollbar-thumb {
 .dashboard-main-container{
   width: 100%;
   margin-left: 250px;
-  margin-top: 20px;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
@@ -100,21 +102,42 @@ div::-webkit-scrollbar-thumb {
   border-color: var(--primary-color)!important;
 }
 
+input {
+	width: 100%;
+	border: 1px solid var(--primary-color-dark);
+	padding: 1rem 2rem;
+	border-radius: 0.9rem;
+	font-family: Inter;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+input:active,
+input:focus {
+	outline: none;
+}
+
+input:placeholder {
+	color: var(--primary-color);
+}
 /* Landing page */
 .download-btn{
-  display: flex;
-  width: 126px;
+  
+  display: inline-block;
+  width: 148px;
   padding:6px;
   border-radius: 4px;
   margin: 4px;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  cursor: grab;
+  cursor: pointer;
 }
 .download-btn div{
   margin-left: 12px;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  padding-right: 8px;
+  align-items: center;
 }
 .google-play{
   color: #f8f9fa;
@@ -128,4 +151,27 @@ div::-webkit-scrollbar-thumb {
 .app-store{
   color: #f8f9fa;
   background-color: black;
+}
+.flex{
+  display: flex;
+  justify-content:space-around;
+  
+}
+.font-awesome-icons{
+  color: var(--box-color);
+  opacity: 1;
+  margin: 20px;
+}
+.font-awesome-icons:hover{
+  color: var(--primary-color);
+}
+.social-media-icons a{
+  margin: 32px;
+}
+.social-media-icons{
+  display: flex;
+  color: var(--secondary-color);
+}
+.social-media-icons a:hover{
+  color: var(--shade-color);
 }

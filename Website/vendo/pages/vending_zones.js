@@ -8,6 +8,7 @@ export default function dashboard() {
           <DashboardSidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
           <div className="dashboard-main-container">
 
+
           </div>
       </div>
     )

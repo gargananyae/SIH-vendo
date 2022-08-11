@@ -7,6 +7,7 @@ import '../styles/ApprovedApplication.css';
 import '../styles/PendingApplication.css';
 import '../styles/Header.components.css';
 import '../styles/Content.css';
+import '../styles/GovernmentLogin.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

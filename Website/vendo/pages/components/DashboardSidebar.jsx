@@ -33,15 +33,15 @@ function Side(){
         </li>
         <li>
         <FontAwesomeIcon icon={GiShop} style={{width:"18px", cursor:"pointer"}}/>
-          <a href="/vendin_zone">Vending Zones</a>
+          <a href="/vending_zones">Vending Zones</a>
         </li>
         <li>
         <FontAwesomeIcon icon= {BsCalendar2WeekFill} style={{width:"18px", cursor:"pointer"}}/>
-          <a href="/Weekly_bazaars">Weekly Bazaar</a>
+          <a href="/weekly_bazaars">Weekly Bazaar</a>
         </li>
         <li>
         <FontAwesomeIcon icon={RiGovernmentFill} style={{width:"18px", cursor:"pointer"}}/>
-          <a href="/Governemnt_schemes">Our Schemes</a>
+          <a href="/government_schemes">Our Schemes</a>
         </li>
       </ul>
     </div>

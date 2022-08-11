@@ -32,6 +32,8 @@
 	color: #281C2D!important;
 }
 
-.landing-navbar-logo img {
-	width: 65%;
+.landing-navbar-logo  {
+	/* width: 65%; */
+	font-size: 3rem;
+	font-weight: 800;
 }
