@@ -70,7 +70,7 @@ div::-webkit-scrollbar-thumb {
 }
 .dashboard-main-container{
   width: 100%;
-  margin-left: 250px;
+  margin-left: 300px;
   height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
@@ -97,6 +97,23 @@ div::-webkit-scrollbar-thumb {
 .btn:active, .btn:hover, .outline-btn:hover, .outline-btn:focus, .btn:focus{
   background-color: #ff0f00!important;
 }
+
+/* React accordion */
+.accordion-button:not(.collapsed){
+  color: #ff0f00;
+  background-color: white;
+
+}
+/* .accordion-button:not(.collapsed)::after{
+
+} */
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+
+/* Form */
+
 .form-control:focus{
   box-shadow: 0 0 0 0.25rem var(--box-color) !important;
   border-color: var(--primary-color)!important;
@@ -120,6 +137,8 @@ input:focus {
 input:placeholder {
 	color: var(--primary-color);
 }
+
+
 /* Landing page */
 .download-btn{
   
